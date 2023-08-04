@@ -19,7 +19,7 @@ public class Scheduler {
     @Autowired
     PasteService pasteService;
 
-    @Scheduled(fixedDelay = 5, timeUnit = TimeUnit.MINUTES)
+    @Scheduled(fixedDelay = 5, timeUnit = TimeUnit.DAYS)
     public void deletePastPastes() {
         List<Paste> pastes = pasteService.getOneByDeletionDateTime();
         pastes.forEach(p -> {

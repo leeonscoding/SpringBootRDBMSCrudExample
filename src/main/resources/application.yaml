@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost/paste
+    url: jdbc:postgresql://crud-example-pg/paste
     username: root
     password: root
   jpa:
@@ -10,3 +10,5 @@ spring:
     properties:
       hibernate:
         format_sql: true
+logging:
+  file: docker/logs/log.file
